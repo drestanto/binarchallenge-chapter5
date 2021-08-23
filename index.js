@@ -12,8 +12,5 @@ app.listen(port, start);
 
 // ----------==============================----------
 
-// CONTROLLERS
-const indexController = require("./controller/index.js");
-
-// ROUTES
-app.get('/', indexController.index);
+// MIDDLEWARE
+app.use(express.static("view"));

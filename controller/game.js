@@ -1,6 +1,6 @@
 
 function index(req, res) {
-    res.render("index");
+    res.render("game");
 }
 
 module.exports = {

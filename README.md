@@ -3,13 +3,11 @@
 ## Tech
 Express JS
 
-<hr>
-
 ## Routes
 ### GET method
-'/' => homepage
-'/game' => game page
-'/users' => users data (static)
+'/' => homepage<br>
+'/game' => game page<br>
+'/users' => users data (static)<br>
 '/login' => login page
 
 ### POST Method

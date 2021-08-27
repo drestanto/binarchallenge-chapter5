@@ -5,6 +5,18 @@ Express JS
 
 <hr>
 
+## Routes
+### GET method
+'/' => homepage
+'/game' => game page
+'/users' => users data (static)
+'/login' => login page
+
+### POST Method
+'/login' => input "username" and "password"
+
+<hr>
+
 ## Set Up
 
 ### Installation

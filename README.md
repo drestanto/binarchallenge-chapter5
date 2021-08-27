@@ -31,7 +31,7 @@ npm install
 ```
 npm run start
 ```
-6. Open browser, link = [localhost:3000](localhost:3000)
+6. Open browser, link = [http://localhost:3000](http://localhost:3000)
 
 <hr>
 

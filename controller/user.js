@@ -10,13 +10,18 @@ function loginIndex(req, res) {
 }
 
 function login(req, res) {
-    const username = req.body.username;
+    const username = req.body.username.toLowerCase();
     const password = req.body.password;
 
-    if (username == "drestanto" && password == "Abcd123456-") {
-        res.status(200).json({ message: 'Login berhasil!' });
+    const idx = users.findIndex(x => x.username === username);
+    if (idx == -1) {
+        res.status(403).json({ message: 'Username tidak ada!'});
     } else {
-        res.status(403).json({ message: 'Username atau password salah!'});
+        if (users[idx].password != password) {
+            res.status(403).json({ message: 'Password salah!'});
+        } else {
+           res.status(200).json({ message: 'Login berhasil!' }); 
+        }
     }
 }
 

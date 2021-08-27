@@ -1,4 +1,8 @@
 
+function get(req, res) {
+    res.status(200).json(users);
+}
+
 function index(req, res) {
     res.render("login");
 }

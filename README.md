@@ -9,7 +9,7 @@ Express JS
 
 ### Installation
 1. Install npm<br>
-Ubuntu : https://www.hostinger.co.id/tutorial/install-node-js-ubuntu
+Ubuntu : https://www.hostinger.co.id/tutorial/install-node-js-ubuntu<br>
 Windows : https://phoenixnap.com/kb/install-node-js-npm-on-windows
 
 ### Get the project

@@ -1,9 +1,11 @@
+users = require("../db/users.json")
+
 
 function get(req, res) {
     res.status(200).json(users);
 }
 
-function index(req, res) {
+function loginIndex(req, res) {
     res.render("login");
 }
 
@@ -19,6 +21,7 @@ function login(req, res) {
 }
 
 module.exports = {
-    index,
+    get,
+    loginIndex,
     login
 }

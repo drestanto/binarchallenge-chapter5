@@ -15,7 +15,7 @@ app.listen(port, start);
 // ----------==============================----------
 
 // STATIC DATA
-users = require("./db/users.json")
+// users = require("./db/users.json")
 
 // MIDDLEWARE
 app.use(express.static("public"));
@@ -31,5 +31,5 @@ const userController = require("./controller/user.js");
 app.get('/', indexController.index);
 app.get('/game', gameController.index);
 app.get('/users', userController.get);
-app.get('/login', userController.index);
+app.get('/login', userController.loginIndex);
 app.post('/login', userController.login);

@@ -31,4 +31,10 @@ npm install
 ```
 npm run start
 ```
-6. Open browser, link = localhost:3000
+6. Open browser, link = [localhost:3000](localhost:3000)
+
+<hr>
+
+### To stop the program
+7. Press Ctrl+C
+8. Press "y", hit Enter

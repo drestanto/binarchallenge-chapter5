@@ -5,6 +5,16 @@ function get(req, res) {
     res.status(200).json(users);
 }
 
+function getById(req, res) {
+    const idx = users.findIndex(x => x.uuid == req.query.uuid);
+    
+    if (idx == -1) {
+        res.status(404).json({ message: 'User not found'});
+    } else {
+        res.status(200).json(users[idx]);
+    }
+}
+
 function loginIndex(req, res) {
     res.render("login");
 }
@@ -27,6 +37,7 @@ function login(req, res) {
 
 module.exports = {
     get,
+    getById,
     loginIndex,
     login
 }

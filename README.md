@@ -8,6 +8,7 @@ Express JS
 '/' => homepage<br>
 '/game' => game page<br>
 '/users' => users data (static)<br>
+'/user' => user data (static) by uuid (headers param : ?uuid=blah)<br>
 '/login' => login page
 
 ### POST Method
